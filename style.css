@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Slider */
+.slider-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,153,51,0.8);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+.dots {
+    margin-top: 15px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ddd;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff9933;
+}
+
+/* Sections */
+section {
+    padding: 20px 20px;
+}
+
+.summary p {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.basic ul, .astrology ul, .career ul, .family ul {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.features ul li {
+    padding: 2px 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.icons i {
+    font-size: 30px;
+    margin: 15px;
+    color: #ff9933;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #cc7a00;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Spec list for bullets */
+.spec-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.spec-list li {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;       /* row spacing */
+}
+
+.spec-list .label {
+    font-weight: 600;
+    width: 180px;          /* fixed width for all labels */
+    text-align: left;
+    padding-right: 8px;    /* space before colon */
+}
+
+.spec-list .colon {
+    width: 15px;           /* fixed width for colon */
+    text-align: center;
+}
+
+.spec-list .value {
+    text-align: left;
+    flex: 1;               /* value fills remaining space */
+}
+/* done */
